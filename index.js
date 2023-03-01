@@ -1,9 +1,4 @@
-const path = require('path');
-const express = require('express');
-
-const config = require(configPath);
-
-const app = express();
+const app = require('express')();
 
 const githubUser = process.env.GITHUB_USER;
 app.get('*', (req, res) => {
